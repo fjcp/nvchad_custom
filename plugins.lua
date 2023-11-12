@@ -31,8 +31,10 @@ local plugins = {
         "clang-format",
         "codelldb",
         "pyright",
-      }
-    }
+        "mypy",
+        "ruff",
+      },
+    },
   },
 
   {
