@@ -30,6 +30,7 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "pyright",
       }
     }
   },
