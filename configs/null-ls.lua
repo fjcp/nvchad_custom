@@ -9,6 +9,7 @@ local sources = {
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
   -- python
+  b.formatting.black,
   b.diagnostics.mypy,
   b.diagnostics.ruff,
   -- Lua

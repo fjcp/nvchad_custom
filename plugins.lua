@@ -30,9 +30,11 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "debugpy",
         "pyright",
         "mypy",
         "ruff",
+        "black",
       },
     },
   },
@@ -98,6 +100,13 @@ local plugins = {
     config = function(_, _)
       require("core.utils").load_mappings("dap")
     end
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+    }
   },
 
   -- To make a plugin not be loaded
